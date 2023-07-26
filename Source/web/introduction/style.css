@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Poppins',sans-serif;
+
+}
+:root{
+    --primary:#fff;
+    --secondary: #363636;
+    --textcolor:#ff2400;
+}
+.navbar{
+    background-color: #f0f8ff;
+    padding: 0.01%;
+    box-shadow: 6px 6px 12px black;
+    margin: 2.5%;
+    padding-left: 2%;
+    border-radius: 10px;
+}
+body{
+    margin: 0%;
+}
+.Intro{
+    /* box-shadow: 6px 6px 12px black;
+    margin-right: 83%;
+    padding: 1%;
+    padding-right: 0.5px;
+    border-radius: 12px;
+    margin-bottom: 1.7%; */
+    
+    padding: 0.01%;
+    box-shadow: 6px 6px 12px black;
+    margin: 2.5%;
+    padding-left: 2%;
+    border-radius: 10px;
+    margin-right: 80%;
+}
+.d{
+    color: blueviolet;
+    font-size: medium;
+}
+.container{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: var(--primary);
+    overflow: hidden;
+}
+.textdata{
+    /* margin-right: 60px; */
+}
+.textdata h2{
+    /* font-size: 3em; */
+    font-weight: 600;
+    color: var(--secondary);
+    z-index: 1111;
+    margin-top: 30px;
+    margin-left: 30px;
+    color: blueviolet;
+}
+.textdata p{
+    color: var(--secondary);
+    margin-top: 0px;
+    margin-right: 117px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+.textdata h3{
+    color: var(--secondary);
+    margin-left: 30px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.textdata span{
+    font-weight: 700;
+}
+.toggleSwitch{
+    position: relative;
+}
+.toggleSwitch .fa{
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    left: 94%;
+    transform: translate(-50% , -50%);
+    cursor: pointer; 
+    padding: 3px;
+    background-color: rgb(172, 175, 175);
+    margin-top: -3%;
+    margin-bottom: 7%;
+    border-radius: 12px;
+    box-shadow: 6px 6px 12px black;
+}
+.fa-sun{
+    display: none;
+    color: #fff;
+}
+.switch{
+    --primary: #36454f;
+    --secondary:#fff;
+}
+.switch .fa-sun{
+    display: block;
+}
+.switch .fa-moon{
+    display: none;
+}
+@media (max-width: 600px) {
+	.navbar {
+	  grid-template-columns: auto;
+    }
+    .Intro{
+        /* grid-template-columns: auto; */
+        margin-right: 60%;
+    }
+    .textdata h2{
+        font-size: medium;
+    }
+    .textdata p{
+        margin-right: 47px;
+        margin-left: 45px;
+    }
+}
+.note{
+    font-style: italic;
+    color: #ff2400;
+    text-decoration: underline;
+}
